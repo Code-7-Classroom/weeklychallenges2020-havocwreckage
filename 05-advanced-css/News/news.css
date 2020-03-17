@@ -1,0 +1,49 @@
+.news {
+  margin: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 32% 32% 32%;
+      grid-template-columns: 32% 32% 32%;
+  grid-gap: 50px;
+}
+
+h1, h2 {
+  font-family: oof;
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+}
+
+body {
+  margin: 0 auto;
+  background: #f2eecb;
+}
+
+@font-face {
+  font-family: oof;
+  src: url("./anglicantext.regular.ttf");
+  border: solid 10px;
+}
+
+img {
+  width: 100%;
+  height: 350px;
+}
+
+footer {
+  text-align: center;
+}
+
+.news p::Before {
+  content: "lorem";
+  color: red;
+  font-weight: bold;
+}
+
+.news__header {
+  border: solid 10px;
+}
+/*# sourceMappingURL=news.css.map */

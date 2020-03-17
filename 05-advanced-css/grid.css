@@ -2,14 +2,14 @@
     height: 90vh;
     margin: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .cell {
     color: white;
     font-size: 3rem;
     text-align: center;
     padding: 4rem;
+    color: black;
   }
   .cell-1 {
     background: deepskyblue;
@@ -17,14 +17,13 @@
   .cell-2 {
     background: orangered;
   }
-  .cell-3 {
-    background: royalblue;
-  }
+
   .cell-4 {
     background: gold;
   }
   .cell-5 {
-    background: blueviolet;
+    background: rgb(151, 100, 199);
+    
   }
   .cell-6 {
     background: limegreen;
@@ -35,6 +34,8 @@
   .cell-8 {
     background: lightseagreen;
   }
-  .cell-9 {
-;
+  
+  img {
+    height: 500px;
+    width: 550px;
   }

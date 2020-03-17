@@ -16,4 +16,11 @@ $colors: red, orange, yellow, green, blue, indigo, violet;
   
   //Create @each loop here
   
+  @each $color in $colors {
+    &__box--#{$color} {
+      background-color: $color;
+    }
+  }
 }
+
+
