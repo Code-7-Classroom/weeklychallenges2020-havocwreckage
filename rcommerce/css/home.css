@@ -8,25 +8,23 @@
   box-sizing: border-box;
 }
 .navbar {
-  z-index: 1;
   position: fixed;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
   /* background: darkgray; */
-  padding: 12px 0;
 }
 
-.navbar-ui {
+.navbar-ul {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding: 12px 0;
 }
 
 nav li {
   list-style: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 .navbar-item--group {
   display: flex;
@@ -208,4 +206,15 @@ a:link {
   text-align: center;
   padding: 4rem;
   color: black;
+}
+
+.header::before{
+  content: "";
+  transition: background 300ms;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+}
+.sticky::before{
+  background: rgba(0,0,255,0.9);
 }
