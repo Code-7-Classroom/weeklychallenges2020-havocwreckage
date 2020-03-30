@@ -6,10 +6,11 @@
   font-size: 5PX;
 }
 
-..hero-text{
+.hero-text{
   color: white;
   font-size: 1em;
-  background: rgba(0, 0, 0, 0.6);}
+  background: rgba(0, 0, 0, 0.6);
+  }
 }
 
 * {
