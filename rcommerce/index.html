@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="./css/home.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <nav class="navbar header" id="header" >
+    <nav class="navbar header" id="header">
       <ul class="navbar-ul">
         <li class="navbar-item logo-container">
           <a class="logo-anchor" href="index.html">
@@ -19,8 +20,9 @@
         </li>
         <li>
           <ul class="navbar-item  navbar-item--group">
-            <li><a href="Produts.html?cpu=intel">Intel</a></li>
-            <li><a href="Produts.html?cpu=amd">AMD</a></li>
+            <!-- <li class="item__type"><a href="Products.html">Intel</a></li> -->
+            <li><a href="Products.html">Machines</a></li>
+            <!-- <li class="item__type"><a href="Products.html">AMD</a></li> -->
           </ul>
         </li>
         <li class="navbar-item nav-contact">
@@ -31,53 +33,59 @@
     <main class="hero">
       <h1 class="hero-text">Hyper Machine Building for the Future of Gaming</h1>
     </main>
-    <div class="carousel-wrapper">
-      <div class="carousel">
-        <img
-          class="carousel__photo initial"
-          src="./img/Ibuypower-pro-prebuilt.jpg"/>
-        <img class="carousel__photo" src="./img/product_6_20190711103706_5d26a0d28bc56.png" />
-        <img class="carousel__photo" src="./img/zotac.jpg" />
-        <img class="carousel__photo" src="./img/dell-alienware-aurora-r7-40814g-1050ti-gaming-pc-desktop-2.png" />
-        <img class="carousel__photo" src="./img/asus-ga35-desktop-pc-render.png" />
+    <div class="only">
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          <img
+            class="carousel__photo initial"
+            src="./img/Ibuypower-pro-prebuilt.jpg"
+            alt="custom-pc"
+          />
+          <img class="carousel__photo" src="./img/l.jpg" alt="custom-pc" />
+          <img class="carousel__photo" src="./img/zotac.jpg" alt="custom-pc" />
+          <img class="carousel__photo" src="./img/dell.jpg" alt="custom-pc" />
+          <img
+            class="carousel__photo"
+            src="./img/asus-ga35-desktop-pc-render.jpg"
+            alt="custom-pc"
+          />
 
-        <div class="carousel__button--next"></div>
-        <div class="carousel__button--prev"></div>
+          <div class="carousel__button--next"></div>
+          <div class="carousel__button--prev"></div>
+        </div>
       </div>
+      <div class="container">
+        <div class="cell">
+          <a href="Products.html">
+            <img
+              src="./img/christian-wiediger-c3ZWXOv1Ndc-unsplash.jpg"
+              alt="AMD chipset"
+            />
+            <p>AMD Power Machine</p>
+          </a>
+        </div>
+        <div class="cell">
+          <a href="Products.html">
+            <img
+              src="./img/christian-wiediger-Htfy7TaDBgo-unsplash.jpg"
+              alt="Intel Chipset"
+            />
+            <p>Intel Power Machine</p>
+          </a>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="social">
+          <a href="https://facebook.com" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
+          <a href="https://twitter.com/" class="link twitter" target="_parent"><span class="fa fa-twitter"></span></a>
+          <a href="https://plus.google.com/" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
+        <p>2020 &copy; Hyper Machine</p>
+      </div>
+      </footer>
     </div>
-    <div class="container">
-      <div class="cell cell-1">
-          <a href="">
-              <img src="">
-              <h2></h2>
-          </a>
-          <h3></h3>
-          <p></p>
-          </a>
-      </div>
-      <div class="cell cell-2">
-          <a
-              href="">
-              <img src="./img/hyper.jpg">
-              <h2></h2>
-          </a>
-          <h3></h3>
-          <p>          </p>
-      </div>
-      <div class="cell cell-3">
-          <a href="">
-              <img src="./img/i7-core.jpg">
-              <h2>                  </h3>
-                  <h3></h3>
-          </a>
-          <p></p>
-      </div>
-
-      </div>
-    <footer class="footer">
-      <p> 2020 &copy; Hyper Machine</p>
-    </footer>
+    <script src="food/filter.js"></script>
     <script src="food/style.js"></script>
     <script src="food/header.js"></script>
+   
   </body>
 </html>

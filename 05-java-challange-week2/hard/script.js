@@ -21,7 +21,7 @@ tom.calcBMI();
 jerry.calcBMI();
 console.log(tom, jerry);
 
-if(tom.bmi < jerry.bmi){
+if (tom.bmi < jerry.bmi) {
   var tombmi = true
   console.log("Tom's BMI is bigger than Jerry's "+ tombmi);
 }

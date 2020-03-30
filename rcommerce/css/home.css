@@ -1,6 +1,16 @@
 :root {
   --gutter: 26px;
 }
+@media screen and (max-width: 768px){
+*{
+  font-size: 5PX;
+}
+
+..hero-text{
+  color: white;
+  font-size: 1em;
+  background: rgba(0, 0, 0, 0.6);}
+}
 
 * {
   margin: 0;
@@ -10,6 +20,7 @@
 .navbar {
   position: fixed;
   width: 100%;
+  z-index: 1000;
   /* background: darkgray; */
 }
 
@@ -63,7 +74,8 @@ nav li {
   width: 50px;
   margin: 0 var(--gutter);
 }
-a:link {
+a:link,
+a:visited {
   text-decoration: none;
 }
 .nav-contact {
@@ -96,8 +108,10 @@ a:link {
 }
 
 /* Apply 'border-box' to 'box-sizing' so border and padding is included in the width and height. */
-.carousel-wrapper * {
+.carousel-wrapper{
   box-sizing: border-box;
+  padding-top: 30px;
+  
 }
 
 /* We'll be using the 'transform' property to move the carousel's items, so setting the 'transform-style' to 'preserve-3d' will make sure our nested elements are rendered properly in the 3D space. */
@@ -113,6 +127,7 @@ a:link {
   position: absolute;
   top: 0;
   width: 100%;
+  
   margin: auto;
   transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
 }
@@ -184,37 +199,117 @@ a:link {
   left: 47%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
-.footer{
-  display:flex;
-  padding: 50px;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  background-color: black;
-  color: aqua;
 
-}
-.container {
-  height: 90vh;
-  margin: 2rem;
-  display: grid;
-  grid-template-columns: 1fr;
+.container { 
+  width: 100%;
+  display: flex;
 }
 .cell {
+  position: relative;
   color: white;
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-align: center;
-  padding: 4rem;
+  padding: 1rem;
   color: black;
-}
 
+}
+.cell img {
+  width: 100%;
+}
+.cell
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+  font-size: 45px;
+}
+.cell a:hover {
+  font-size:56px ;
+}
 .header::before{
   content: "";
-  transition: background 300ms;
+  transition: background 800ms;
   width: 100%;
   height: 100px;
   position: absolute;
 }
 .sticky::before{
-  background: rgba(0,0,255,0.9);
+  background: rgba(83, 0, 69,0.9);
 }
+.footer{
+  display: flex;
+  position: relative;;
+  padding: 100px;
+  text-align: center;
+  justify-content: center;
+  
+  width: 100%;
+  background-color: black;
+  color: aqua;
+
+}
+.only{
+  background-color:purple;
+}
+.footer P{
+font-size: 36PX;}
+.social {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px dashed ;
+  background-clip: content-box;
+  padding: 10px;
+  transition: .5s;
+  color: #D7D0BE;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 50px;
+}
+
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+  padding: 20px;
+  color: white;
+  margin-left: -5px;
+  transform: translateX(10px) rotate(360deg);
+}
+
+.social .link.google-plus {
+  background-color: tomato;
+  color: white;
+}
+
+.social .link.twitter {
+  background-color: #00ACEE;
+  color: white;
+}
+
+.social .link.facebook {
+  background-color: #3B5998;
+  color: white;
+}
+
+
+
+
+

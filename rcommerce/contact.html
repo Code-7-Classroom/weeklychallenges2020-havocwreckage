@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/home.css" />
+    <link rel="stylesheet" type="text/css" href="./css/idk.css" />
+    <link rel="stylesheet" type="text/css" href="./css/contact.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar header" id="header">
+    <ul class="navbar-ul">
+      <li class="navbar-item logo-container">
+        <a class="logo-anchor" href="index.html">
+          <img class="logo" src="./img/logo.png" alt="Hm-logo" /> </a
+        ><a class="logo-anchor" href="index.html">
+          Hyper Machine
+        </a>
+      </li>
+      <li>
+        <ul class="navbar-item  navbar-item--group">
+          <!-- <li class="item__type"><a href="Products.html">Intel</a></li> -->
+          <li><a href="Products.html">Machines</a></li>
+          <!-- <li class="item__type"><a href="Products.html">AMD</a></li> -->
+        </ul>
+      </li>
+      <li class="navbar-item nav-contact">
+        <a href="contact.html">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="top_Container">
+  <form name="form" class="form-container" onsubmit="return validateForm()" action="/action_page.php method="get">
+    <h1 class="form-inner">Contact us</h1>
+    <br class="input-holder">
+    <label class="label" for="email">Email Address</label>
+    <input type="text" class="input-text"  id="email" >
+    <br class="input-holder">
+    <label class="label" for="name">Full Name</label>
+    <input type="text" id="name"  class="input-text">
+    <br class="input-holder">
+    <label class="label" for="message">Message</label>
+    <textarea id="message"></textarea>
+    <button type="submit" id="submit" class="button">Submit</button>
+  </form>
+</main>
+<footer class="footer">
+  <div class="social">
+    <a href="https://facebook.com" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
+    <a href="https://twitter.com/" class="link twitter" target="_parent"><span class="fa fa-twitter"></span></a>
+    <a href="https://plus.google.com/" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
+  <p>2020 &copy; Hyper Machine</p>
+</div>
+</footer>
+<script src="food/style.js"></script>
+<script src="food/contact.js"></script>
+<script src="food/header.js"></script>
+</body>
+</html>
