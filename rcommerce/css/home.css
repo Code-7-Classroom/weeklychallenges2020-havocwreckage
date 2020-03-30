@@ -60,7 +60,7 @@ nav li {
   text-decoration: none;
 }
 .navbar-item a:hover {
-  color: red;
+  font-size: larger;
 }
 .logo-container {
   display: flex;
