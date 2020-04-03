@@ -1,5 +1,12 @@
-function pii(){
-    var pii = {name: "John", ssn: "123-45-6789"};
-    return pii.name;
+var humanInfo = (function (personalData) {
+    var pii = {
+        name: 'John mcgee',
+        ssn: '098-76-7890'
     }
-    console.log(pii());
+    return public = {
+        getName: function getName() {
+            return pii.name;
+        }
+    };
+})();
+console.log(humanInfo.getName());
