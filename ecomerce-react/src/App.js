@@ -12,7 +12,7 @@ import Contact from "./pages/contact";
 
 const App = () => {
   return (
-    <div style={{ padding: "128px 20px 20px" }}>
+    <div>
       <Router>
         <Switch>
           <Route path="/contact">
