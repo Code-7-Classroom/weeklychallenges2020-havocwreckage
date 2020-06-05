@@ -41,6 +41,7 @@
 .social .link.google-plus {
   background-color: tomato;
   color: white;
+  text-decoration: none;
 }
 
 .social .link.twitter {
@@ -52,4 +53,5 @@
 .social .link.facebook {
   background-color: #3b5998;
   color: white;
+  text-decoration: none;
 }

@@ -1,21 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Coursel from "../components/coursel/coursel"
 import Intel from '../assets/img/christian-wiediger-c3ZWXOv1Ndc-unsplash.jpg'
 import Amd from '../assets/img/christian-wiediger-Htfy7TaDBgo-unsplash.jpg'
-import "../components/home/styles.css";
+import "./home.css";
 
 const Home = () => {
   return (
     <>
-      <main class="hero">
-        <h1 class="hero-text">
+      <main className="hero">
+        <h1 className="hero-text">
           Hyper Machine Building for the Future of Gaming
         </h1>
       </main>
-      <div class="only">
-        <div class="container">
-          <div class="cell">
+      <div className="only">
+        <Coursel />
+      </div>
+      <div className="only">
+        <div className="container">
+          <div className="cell">
             <Link to="/products">
               <img
                 src={Intel}
@@ -24,7 +28,7 @@ const Home = () => {
               <p>AMD Power Machine</p>
               </Link>
           </div>
-          <div class="cell">
+          <div className="cell">
           <Link to="/products">
               <img
                 src={Amd}

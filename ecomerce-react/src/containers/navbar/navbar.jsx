@@ -29,7 +29,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-item">
-          <Link to="/products">Machines</Link>
+          <Link to="/product">Machines</Link>
           {/* <Link to="/products?branch=intel">Intel</Link> */}
           {/* <Link to="/products?branch=amd">AMD</Link> */}
         </div>
